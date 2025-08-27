@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devansh Chikara | Front-End Web Developer</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">Devansh Chikara</div>
+    <nav>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div>
+      <h1>Hi, I’m Devansh — Front-End Developer</h1>
+      <p>Building clean, responsive, and accessible web experiences with a focus on modern UI, performance, and detail.</p>
+      <div class="row mt-16">
+        <a class="btn" href="#projects"><i class="fa-solid fa-eye"></i> View My Work</a>
+        <a class="btn secondary" href="#contact"><i class="fa-regular fa-paper-plane"></i> Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <p class="lead">A few recent builds. Each card links to a live demo and source.</p>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?q=80&w=1600&auto=format&fit=crop" alt="Fitness landing page preview">
+        <div class="content">
+          <h3>Fitness Landing Page</h3>
+          <p>A modern hero-led landing page with responsive layout and gradient UI accents.</p>
+          <div class="mt-8">
+            <span class="pill">HTML</span><span class="pill">CSS</span>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="https://devanshchikara.github.io/fitness-landing-page/" target="_blank">Live Demo</a>
+          <a class="btn secondary" href="https://github.com/DevanshChikara/fitness-landing-page" target="_blank">Source</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1600&auto=format&fit=crop" alt="E-commerce mock">
+        <div class="content">
+          <h3>AuraShop E-commerce</h3>
+          <p>A sleek storefront layout with product grid, badges, and polished card design.</p>
+          <div class="mt-8">
+            <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JS</span>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="#" target="_blank">Live Demo</a>
+          <a class="btn secondary" href="#" target="_blank">Source</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop" alt="Analytics dashboard">
+        <div class="content">
+          <h3>Insightful Analytics</h3>
+          <p>A dashboard concept with cards, KPIs, and clean information hierarchy.</p>
+          <div class="mt-8">
+            <span class="pill">HTML</span><span class="pill">CSS</span>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="#" target="_blank">Live Demo</a>
+          <a class="btn secondary" href="#" target="_blank">Source</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about">
+      <div class="avatar">DC</div>
+      <div>
+        <p>Hi! I’m Devansh, a front-end developer who loves building crisp, accessible interfaces and thoughtful interactions. I focus on clean code, performance, and delightful UX.</p>
+        <p>My toolbox includes semantic HTML, modern CSS (Grid/Flexbox), and vanilla JS. I’m always iterating and leveling up my craft.</p>
+
+        <div class="badges">
+          <div class="badge">
+            <span>Clean Code</span>
+            <small>Semantic HTML • BEM CSS</small>
+          </div>
+          <div class="badge">
+            <span>Creative Design</span>
+            <small>UI polish • Micro-interactions</small>
+          </div>
+          <div class="badge">
+            <span>Responsive</span>
+            <small>Mobile-first • Accessibility</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Let’s Work Together</h2>
+    <p class="lead">Have a project in mind? I’d love to hear about it.</p>
+
+    <div class="contact-wrap">
+      <!-- form -->
+      <form class="form" onsubmit="event.preventDefault(); alert('Thanks! I will get back to you.');">
+        <h3>Send a Message</h3>
+        <label for="name">Name</label>
+        <input class="input" id="name" type="text" placeholder="Your name" required>
+        <label for="email">Email</label>
+        <input class="input" id="email" type="email" placeholder="Your email" required>
+        <label for="msg">Message</label>
+        <textarea class="textarea" id="msg" placeholder="Write your message"></textarea>
+        <button class="btn mt-16" type="submit"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+      </form>
+
+      <!-- info -->
+      <div class="info">
+        <div class="ibox">
+          <i class="fa-solid fa-envelope"></i>
+          <div><b>Email</b><small>devansh@example.com</small></div>
+        </div>
+        <div class="ibox">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><b>Location</b><small>Available for remote work</small></div>
+        </div>
+        <div class="ibox">
+          <i class="fa-brands fa-github"></i>
+          <div><b>GitHub</b><small>github.com/DevanshChikara</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3 style="margin:0 0 8px">Devansh Chikara</h3>
+    <small>Front-End Developer • UI Enthusiast</small>
+
+    <div class="social">
+      <a class="icon" href="https://github.com/DevanshChikara" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a class="icon" href="mailto:devansh@example.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a class="icon" href="#" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <small>© <span id="y"></span> Devansh Chikara. All rights reserved.</small>
+  </footer>
+
+  <script>
+    // set current year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
